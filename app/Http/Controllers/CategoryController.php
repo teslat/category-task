@@ -31,7 +31,7 @@ class CategoryController extends Controller
         ]);
         $categories = [];
         $title = $data['title'];
-        $data['title'] = 'SUB ' . $data['title'] . '-1';
+        $data['title'] = 'SUB ' . $title . '-1';
         $categories[] = Category::create($data);
         $data['title'] = 'SUB ' . $title . '-2';
         $categories[] = Category::create($data);
